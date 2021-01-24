@@ -216,7 +216,7 @@ class PEvent {
         this.timestamp = Math.round(event.timeStamp * 1000);
         this.is_primary = event.isPrimary;
         this.pointer_type = event.pointerType;
-        this.button = event.button < 0 ? 0 : 1 << event.button;
+        this.button = event.button < 0 ? 0 : 1 ; //<< event.button;
         this.buttons = event.buttons;
         this.x = (event.clientX - videoRect.left) / videoRect.width;
         this.y = (event.clientY - videoRect.top) / videoRect.height;
